@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="../css_pages/product_det.css">
+</head>
+
+<body>
+
+
+  <header class="navbar">
+    <a href="../index.html" class="logo">Pet<span>Care</span></a>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search for pet products...">
+      <button>🔍</button>
+    </div>
+
+    <nav class="nav-links">
+      <a href="../pages/card.html">Cart</a>
+      <a href="../pages/wishlist.html">Wish List</a>
+      <a href="../pages/login_page.html">Login</a>
+    </nav>
+  </header>
+
+
+  <div class="container">
+    <div class="product-image">
+      <a href="#">
+        <img src="../assets/belt.png" alt="Product Image" id="product-image">
+      </a>
+    </div>
+
+    <div class="product-details">
+      <h2 id="product-name">Loading...</h2>
+      <p><strong>MRP:</strong> <span id="product-price">₹...</span></p>
+      <p><strong>DESCRIPTION:</strong> <span id="product-description">Loading...</span></p>
+
+      <div class="buttons">
+        <div class="buttons">
+          <button class="add" id="add-to-cart-btn">ADD TO CART</button>
+          <button class="wishlist" id="add-to-wishlist-btn"
+            style="background: none; border: 1px solid #ccc; font-size: 1.5rem; cursor: pointer; margin-left: 10px;">💛</button>
+          <!-- <button class="buy" id="buy-now-btn">BUY NOW</button> -->
+        </div>
+      </div>
+    </div>
+    <div class="back-wrapper">
+      <a href="../pages/cats_shop.html" class="back-btn">
+        ← Back to Product Details
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="../javascript/product.js">
+
+  </script>
+</body>
+
+</html>

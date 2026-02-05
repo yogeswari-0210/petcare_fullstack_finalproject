@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Care Login</title>
+  <link rel="stylesheet" href="../css_pages/login_css.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-left">
+      <div class="logo">
+        <img src="../assets/Screenshot 2025-10-22 171656.png" alt="Pet Logo">
+      </div>
+      <h3>Sign In To Continue</h3>
+
+     
+      <form id="loginForm">
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" id="password" placeholder="Password" required>
+        </div>
+
+        <div class="options">
+          <label><input type="checkbox"> Remember</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p id="error" style="color:red"></p>
+
+      <div class="footer-links">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="login-right">
+      <img src="../assets/DOD.jpg" alt="Dog">
+    </div>
+  </div>
+
+
+  <script src="../javascript/login.js"></script>
+</body>
+</html>

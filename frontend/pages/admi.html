@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../css_pages/admin.css">
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <h1>Admin Dashboard</h1>
+    <span class="admin-badge">Admin</span>
+  </div>
+
+  <!-- Layout -->
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Menu</h3>
+      <ul>
+        <li class="active">Create Order</li>
+        <li>Orders</li>
+        <li>Analytics</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+      <!-- Create Product -->
+      <section class="card">
+        <h2>Create Product</h2>
+        <form class="form-grid" id="create-product-form">
+          <input type="text" id="product-name" placeholder="Product Name" required>
+          <input type="number" id="product-price" placeholder="Price" required>
+          <input type="text" id="product-desc" placeholder="Description">
+          <select id="product-category" required>
+            <option value="" disabled selected>Select Category</option>
+          </select>
+          <input type="file" id="product-image" accept="image/*" required>
+          <button type="submit">Create Product</button>
+        </form>
+      </section>
+
+      <!-- Create Order -->
+      <section class="card">
+        <h2>Create Order</h2>
+        <form class="form-grid">
+          <input type="number" placeholder="Order ID">
+          <input type="text" placeholder="Product Name">
+          <input type="number" placeholder="Price">
+          <input type="text" placeholder="Username">
+          <input type="number" placeholder="Quantity">
+          <input type="date">
+          <input type="text" placeholder="Image URL">
+          <select>
+            <option>Pending</option>
+            <option>Completed</option>
+            <option>Cancelled</option>
+          </select>
+          <button>Create Order</button>
+        </form>
+      </section>
+
+      <!-- Orders -->
+      <section class="card">
+        <h2>Orders</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Product</th>
+              <th>Price</th>
+              <th>User</th>
+              <th>Qty</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>dog food</td>
+              <td>₹1200</td>
+              <td>Ravi</td>
+              <td>1</td>
+              <td>2026-01-01</td>
+              <td>Pending</td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>house for dog</td>
+              <td>₹1500</td>
+              <td>Anu</td>
+              <td>2</td>
+              <td>2026-01-02</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>103</td>
+              <td>puppy plate</td>
+              <td>₹800</td>
+              <td>Karthik</td>
+              <td>3</td>
+              <td>2026-01-03</td>
+              <td>Cancelled</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <button class="active">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>Next</button>
+        </div>
+      </section>
+
+      <!-- Analytics -->
+      <section class="card">
+        <h2>Analytics</h2>
+        <div class="stats">
+          <div class="stat">Total Orders<br><strong>120</strong></div>
+          <div class="stat">Revenue<br><strong>₹85,000</strong></div>
+          <div class="stat">Pending<br><strong>18</strong></div>
+          <div class="stat">Users<br><strong>40</strong></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="../javascript/admin.js"></script>
+</body>
+
+</html>

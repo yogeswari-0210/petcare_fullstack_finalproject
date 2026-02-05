@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirm Order | PetCare</title>
+  <link rel="stylesheet" href="../css_pages/placeorder.css" />
+</head>
+
+<body>
+
+  <header class="navbar">
+    <a href="../index.html" class="logo">Pet<span>Care</span></a>
+
+    <div class="search-container">
+      <input type="text" placeholder="SEARCH" />
+      <span class="search-icon">🔍</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="../pages/card.html">Cart</a>
+      <a href="../pages/wishlist.html">Wishlist</a>
+      <a href="../pages/ordertrack.html">Track Order</a>
+      <a href="../pages/login_page.html">Login</a>
+    </nav>
+  </header>
+
+
+  <div class="back-home">
+    <a href="../index.html">BACK TO HOME</a>
+  </div>
+
+
+  <main class="order-section">
+
+    <section class="left">
+      <h1>confirm your order</h1>
+
+      <div class="box">
+        <h3>shipping address:</h3>
+        <textarea id="shipping-address" placeholder="Enter your full address..."
+          style="width: 100%; height: 80px; padding: 10px; border-radius: 8px; border: 1px solid #ddd;"></textarea>
+      </div>
+
+      <div class="box">
+        <h3>payment method:</h3>
+        <label><input type="radio" name="pay" value="Cash on Delivery" checked /> cash on delivery</label>
+        <label><input type="radio" name="pay" value="GPay" /> gpay</label>
+        <label><input type="radio" name="pay" value="PhonePe" /> phone pay</label>
+      </div>
+    </section>
+
+
+    <section class="right">
+      <div class="price-box">
+        <div class="price-item">Price: <span id="subtotal">₹0</span></div>
+        <div class="price-item">Delivery Fee: <span id="delivery-fee">₹0</span></div>
+        <div class="price-item">Total Price: <span id="total-price">₹0</span></div>
+      </div>
+    </section>
+  </main>
+
+
+  <button id="place-order-btn" class="place-btn">Place Order</button>
+
+  <script src="../javascript/placeorder.js"></script>
+
+</body>
+
+</html>

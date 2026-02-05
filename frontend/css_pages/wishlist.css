@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+.shop-links {
+  display: flex;
+  justify-content: space-around;
+
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.shop-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+.shop-links a:hover {
+  color: orange;
+}
+
+.search-container button {
+  position: absolute;
+  right: 10px;
+
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shop-table td,
+.shop-table th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+.shop-table {
+  width: 85%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.shop-table th {
+  background-color: #f6b400;
+  color: white;
+  padding: 15px;
+
+}
+
+.shop-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  background: white;
+  transition: 0.3s;
+}
+
+.shop-table tr:hover td {
+  background-color: #fff8e1;
+}
+
+
+.add-btn {
+  color: #f6b400;
+  font-weight: bold;
+  text-decoration: none;
+
+
+
+}
+
+
+.remove {
+  color: red;
+  font-size: 22px;
+  cursor: pointer;
+
+
+}
+
+
+
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f6b400;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #d39e00;
+  transform: scale(1.08);
+
+}

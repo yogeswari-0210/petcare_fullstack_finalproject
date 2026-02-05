@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Your Order | PetCare</title>
+  <link rel="stylesheet" href="../css_pages/trackorder.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="../index.html" class="logo">Pet<span>Care</span></a>
+
+
+
+    <nav class="nav-links">
+      <a href="../pages/card.html">Cart</a>
+      <a href="../pages/wishlist.html">Wish List</a>
+      <a href="../pages/ordertrack.html" style="color: var(--primary);">Track Order</a>
+      <a href="../pages/login_page.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="order-container" id="orders-container">
+    <!-- Orders will be loaded here dynamically by ordertrack.js -->
+    <p style="text-align: center; padding: 20px;">Loading your orders...</p>
+  </div>
+
+  <script src="../javascript/ordertrack.js"></script>
+
+
+
+  <footer class="base-footer">
+    <p>&copy; 2024 PetCare. All rights reserved.</p>
+    <a href="#">Contact Us</a> |
+    <a href="#">Terms and Conditions</a> |
+    <a href="#">Privacy Policy</a>
+  </footer>
+
+
+  <script src="../javascript/nav.js"></script>
+</body>
+
+</html>

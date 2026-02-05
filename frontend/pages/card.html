@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetCare - Cart</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css_pages/shared_nav.css">
+  <link rel="stylesheet" href="../css_pages/card.css">
+</head>
+
+<body>
+
+
+  <header class="navbar">
+    <a href="#" class="logo">Pet<span>Care</span></a>
+
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search for products...">
+      <button id="search-btn"><i class="bi bi-search"></i></button>
+    </div>
+
+    <nav class="nav-links">
+      <a href="../pages/card.html"><i class="bi bi-cart3"></i> Cart</a>
+      <a href="../pages/wishlist.html"><i class="bi bi-heart"></i> Wish List</a>
+      <a href="../pages/ordertrack.html"><i class="bi bi-box-seam"></i> Track</a>
+      <a href="../pages/login_page.html" class="login-btn"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+    </nav>
+  </header>
+
+
+  <section class="shop-links">
+    <a href="../pages/dogs_shop.html">Shop for Dogs</a>
+    <a href="../pages/cats_shop.html">Shop for Cats</a>
+  </section>
+
+
+  <table>
+    <tr>
+      <th>PRODUCT</th>
+      <th>NAME</th>
+      <th>QUANTITY</th>
+      <th>PRICE</th>
+      <th>ADD WISHLIST</th>
+      <th>REMOVE</th>
+    </tr>
+    <tbody id="cart-items-container">
+      <!-- Dynamic Items will be loaded here -->
+      <tr>
+        <td colspan="6" style="text-align:center;">Loading cart...</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <a href="../pages/placeorder.html" class="proceed-btn"
+      style="display:block; width:200px; margin: 20px auto; text-align:center;">Proceed to Pay</a>
+  </div>
+
+  <script src="../javascript/cart.js"></script>
+  <script src="../javascript/nav.js"></script>
+</body>
+
+</html>
