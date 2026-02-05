@@ -1,0 +1,9 @@
+Found 8 categories:
+ID: 4 | Name: 'Test Category' | Parent: 'None'
+ID: 8 | Name: 'shop for dogs' | Parent: 'None'
+ID: 9 | Name: 'food' | Parent: 'shop for dogs'
+ID: 10 | Name: 'shop for cats' | Parent: 'None'
+ID: 11 | Name: 'Dog Food' | Parent: 'shop for dogs'
+ID: 12 | Name: 'Dog Toys' | Parent: 'shop for dogs'
+ID: 13 | Name: 'Cat Food' | Parent: 'shop for cats'
+ID: 14 | Name: 'Cat Toys' | Parent: 'shop for cats'
